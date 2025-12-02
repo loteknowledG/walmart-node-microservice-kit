@@ -76,3 +76,41 @@ You can run the service directly using Node or via Docker Compose.
 ```bash
 npm start
 # The service will be available at http://localhost:[PORT]
+Use code with caution.
+
+Option 2: Run with Docker Compose
+This method is recommended as it spins up all required services (e.g., the database) in isolated containers.
+bash
+docker-compose up --build
+# The application will be available at http://localhost:[PORT defined in docker-compose]
+Use code with caution.
+
+Project Structure
+A brief overview of the key directories:
+/src
+├── controllers/    # Handles request/response logic
+├── services/       # Business logic and external calls
+├── routes/         # API routes definition
+├── models/         # Database models/schema (e.g., Sequelize models)
+├── utils/          # Helper functions
+└── app.js          # Main entry point
+/tests              # Unit and integration tests
+.env.example        # Template for environment variables
+Dockerfile          # Container build instructions
+API Endpoints
+[If applicable, list key endpoints or link to an OpenAPI definition file here.]
+GET /api/v1/health - Check service health
+POST /api/v1/items - Create a new item
+...
+Testing
+To run the test suite:
+bash
+npm test
+Use code with caution.
+
+Contributing
+Contributions are welcome! Please read the [CONTRIBUTING.md](link to CONTRIBUTING.md file if you have one) file for guidelines on how to submit issues or pull requests.
+License
+This project is licensed under the [LICENSE NAME, e.g., MIT License] - see the LICENSE file for details.
+Contact
+GitHub: @loteknowledG
