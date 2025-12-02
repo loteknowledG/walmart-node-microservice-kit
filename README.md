@@ -101,11 +101,12 @@ API Endpoints
 [If applicable, list key endpoints or link to an OpenAPI definition file here.]
 GET /api/v1/health - Check service health
 POST /api/v1/items - Create a new item
-...
+```
 Testing
 To run the test suite:
-bash
+```bash
 npm test
+```
 Use code with caution.
 
 Contributing
